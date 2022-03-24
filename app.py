@@ -3,7 +3,7 @@ import pickle
 from PIL import Image
 model = pickle.load(open('RF_price_predicting_model.pkl','rb'))
 
-image = Image.open("icon/logo.jpg")
+image = Image.open("logo.jpg")
 st.sidebar.title("our company")
 st.sidebar.image(image)
 def main():
