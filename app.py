@@ -3,8 +3,8 @@ import pickle
 from PIL import Image
 model = pickle.load(open('RF_price_predicting_model.pkl','rb'))
 
-image = Image.open("logo.jpg")
-st.sidebar.title("our company")
+image = Image.open("logo.jpeg")
+st.sidebar.title("CARMAX")
 st.sidebar.image(image)
 def main():
     st.title("Selling Price Predictor 🚗")
