@@ -4,11 +4,14 @@ from PIL import Image
 model = pickle.load(open('RF_price_predicting_model.pkl','rb'))
 
 image = Image.open("logo.jpeg")
-st.sidebar.title("CARMAX")
+TAPMI_image = Image.open("TAPMI_logo.jpg")
+st.sidebar.image(TAPMI_image)
+#st.sidebar.title("CARMAX")
 st.sidebar.image(image)
 def main():
-    st.title("Selling Price Predictor 🚗")
-    st.markdown("##### Are you planning to sell your car !?\n##### So let's try evaluating the price.. 🤖 ")
+    st.title("CARMAX")
+    #st.title("Selling Price Predictor 🚗")
+    st.markdown("#### About us \n###### Our company comes into the picture when you wish to sell your cars and want to find accurate resale price.\n##### So let's try evaluating the price... 🤖 ")
 
     # @st.cache(allow_output_mutation=True)
     # def get_model():
