@@ -21,7 +21,7 @@ def main():
     st.write('')
     st.write('')
 
-    years = st.number_input('In which year car was purchased ?',1990, 2022, step=1, key ='year')
+    years = st.number_input('In which year car was purchased ?',2000, 2022, step=1, key ='year')
     Years_old = 2022-years
 
     Present_Price = st.number_input('What is the current ex-showroom price of the car ?  (In ₹lakhs)', 0.00, 50.00, step=0.5, key ='present_price')
